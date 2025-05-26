@@ -1,0 +1,67 @@
+body {
+    background-color: #ffe6f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4d0039;
+    margin: 20px;
+  }
+  
+  h1 {
+    color: #cc0066;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+  }
+  
+  .card {
+    background-color: #fff0f5;
+    border: 2px solid #ff99cc;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(255, 105, 180, 0.2);
+  }
+  
+  h3 {
+    color: #cc0066;
+    font-weight: bold;
+  }
+  
+  label {
+    font-weight: bold;
+    color: #b30059;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ffb3d9;
+    border-radius: 8px;
+    font-size: 1em;
+  }
+  
+  button {
+    background-color: #ff66b2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    font-size: 1em;
+    margin-right: 5px;
+  }
+  
+  button:hover {
+    background-color: #e60073;
+  }
+  
+  .voto {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #660033;
+  }
+  

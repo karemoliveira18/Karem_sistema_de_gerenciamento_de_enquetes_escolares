@@ -1,67 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 body {
-    background-color: #ffe6f0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #4d0039;
-    margin: 20px;
-  }
-  
-  h1 {
-    color: #cc0066;
-    text-align: center;
-    font-size: 2em;
-    font-weight: bold;
-  }
-  
-  .card {
-    background-color: #fff0f5;
-    border: 2px solid #ff99cc;
-    border-radius: 15px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 6px rgba(255, 105, 180, 0.2);
-  }
-  
-  h3 {
-    color: #cc0066;
-    font-weight: bold;
-  }
-  
-  label {
-    font-weight: bold;
-    color: #b30059;
-  }
-  
-  input[type="text"],
-  textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    border: 1px solid #ffb3d9;
-    border-radius: 8px;
-    font-size: 1em;
-  }
-  
-  button {
-    background-color: #ff66b2;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-    font-size: 1em;
-    margin-right: 5px;
-  }
-  
-  button:hover {
-    background-color: #e60073;
-  }
-  
-  .voto {
-    margin-top: 10px;
-    font-size: 0.9em;
-    color: #660033;
-  }
-  
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+  color: #4a154b;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin: 40px 0 30px 0;
+  font-weight: 600;
+  color: #880e4f;
+  text-shadow: 1px 1px 4px rgba(255, 192, 203, 0.5);
+  font-size: 2.5rem;
+}
+
+.enquete {
+  background: #f48fb1;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 15px rgba(197, 17, 98, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.enquete:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(197, 17, 98, 0.5);
+}
+
+.enquete h3 {
+  margin-top: 0;
+  font-weight: 600;
+  color: #880e4f;
+}
+
+.enquete button {
+  background: #880e4f;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  margin: 8px 6px 8px 0;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(136, 14, 79, 0.4);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.enquete button:hover {
+  background: #ad1457;
+  box-shadow: 0 6px 14px rgba(173, 20, 87, 0.7);
+}
+
+.resultado {
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 1.1em;
+  color: #6a1b4d;
+  letter-spacing: 0.02em;
+}
+
+form {
+  background: #f8bbd0;
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 450px;
+  box-shadow: 0 8px 20px rgba(197, 17, 98, 0.3);
+  margin: 0 auto 40px auto;
+}
+
+form input[type="text"] {
+  border-radius: 30px;
+  border: 2px solid #880e4f;
+  padding: 12px 20px;
+  font-size: 1em;
+  margin-bottom: 15px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form input[type="text"]:focus {
+  border-color: #ad1457;
+}
+
+form button {
+  background: #880e4f;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 20px;
+  font-weight: 600;
+  font-size: 1em;
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(136, 14, 79, 0.6);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+}
+
+form button:hover {
+  background: #ad1457;
+  box-shadow: 0 8px 20px rgba(173, 20, 87, 0.9);
+}

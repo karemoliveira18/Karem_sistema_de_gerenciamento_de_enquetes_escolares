@@ -1,31 +1,24 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Enquete Escolar</title>
-  <link rel="stylesheet" href="style.css"/>
+  <title>Sistema de Enquente Escolar</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Sistema de Gerenciamento de Enquete Escolar</h1>
+  <h1>Enquetes Escolar</h1>
 
-  <!-- Enquetes Prontas -->
-  <div id="enquetes-container">
-    <!-- As enquetes serão inseridas aqui via JavaScript -->
-  </div>
+  <section id="enquetes-container"></section>
 
-  <!-- Criar nova enquete -->
-  <div class="card">
-    <h3>Criar nova enquete</h3>
-    <label for="titulo">Título da enquete:</label>
-    <input type="text" id="titulo" placeholder="Digite o título..."/>
-
-    <label for="descricao">Descrição:</label>
-    <textarea id="descricao" placeholder="Digite a descrição..."></textarea>
-
-    <button onclick="criarEnquete()">Criar Enquete</button>
-  </div>
+  <section id="criador">
+    <form id="form-enquete">
+      <input type="text" id="titulo" placeholder="Título da enquete" required />
+      <input type="text" id="opcoes" placeholder="Opções separadas por vírgula" required />
+      <button type="submit">Criar Enquete</button>
+    </form>
+  </section>
 
   <script src="script.js"></script>
 </body>
 </html>
+

@@ -2,23 +2,31 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <title>Sistema de Enquente Escolar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Enquetes Escolar</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Enquetes Escolar</h1>
+  <header>
+    <h1>Enquetes Escolar</h1>
+  </header>
 
-  <section id="enquetes-container"></section>
+  <main>
+    <section id="enquetes-container"></section>
 
-  <section id="criador">
-    <form id="form-enquete">
-      <input type="text" id="titulo" placeholder="Título da enquete" required />
-      <input type="text" id="opcoes" placeholder="Opções separadas por vírgula" required />
-      <button type="submit">Criar Enquete</button>
-    </form>
-  </section>
+    <section id="criador">
+      <form id="form-enquete">
+        <input type="text" id="titulo" placeholder="Título da enquete" required />
+        <input type="text" id="opcoes" placeholder="Opções separadas por vírgula" required />
+        <button type="submit">Criar Enquete</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Sistema de Enquetes Escolares</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
-

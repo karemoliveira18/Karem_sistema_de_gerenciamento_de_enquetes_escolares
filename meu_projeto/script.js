@@ -5,9 +5,9 @@ const enquetes = [];
 
 const iniciais = [
   { titulo: "Qual horário você acha melhor para as aulas começarem?", opcoes: ["7h", "7:30", "8h", "8:30"] },
-  { titulo: "Qual seu estilo musical favorito?", opcoes: ["Rock", "Pop", "Funk", "Sertanejo"] },
-  { titulo: "Qual seu app favorito?", opcoes: ["Instagram", "TikTok", "WhatsApp", "X"] },
-  { titulo: "Qual seu animal favorito?", opcoes: ["Gato", "Cachorro", "Pássaro", "Peixe"] }
+  { titulo: "Você prefere estudar de qual forma?", opcoes: ["Sozinho", "Online", "Presencial", "Em grupo"] },
+  { titulo: "Qual atividade extracurricular você gostaria que tivesse na escola?", opcoes: ["Robótica", "Música", "Futebol", "Teatro"] },
+  { titulo: "Você acha que a escola deveria investir mais em tecnologia?", opcoes: ["Sim, com tablets e notebooks", "Sim, com aulas online", "Não, prefiro métodos tradicionais", "Indiferente"] }
 ];
 
 function criarEnquete(titulo, opcoes) {
@@ -49,10 +49,10 @@ function atualizarResultado(div, enquete) {
     .join(" | ");
 }
 
-// Cria as enquetes iniciais
+
 iniciais.forEach(enq => criarEnquete(enq.titulo, enq.opcoes));
 
-// Formulário para criar novas enquetes
+
 form.addEventListener("submit", e => {
   e.preventDefault();
   const titulo = document.getElementById("titulo").value.trim();
